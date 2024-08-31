@@ -1,7 +1,7 @@
-com\example\controller\BookListServlet.class
-com\example\dao\BookDAO.class
-com\example\config\AppConfig.class
-com\example\config\WebAppInitializer.class
-com\example\service\BookService.class
-com\example\model\Book.class
-com\example\config\WebConfig.class
+com/example/service/BookService.class
+com/example/config/WebConfig.class
+com/example/controller/BookListServlet.class
+com/example/dao/BookDAO.class
+com/example/model/Book.class
+com/example/config/WebAppInitializer.class
+com/example/config/AppConfig.class

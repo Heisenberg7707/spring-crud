@@ -1,7 +1,7 @@
-C:\Users\Artem\eclipse-workspace\library-management\src\main\java\com\example\config\AppConfig.java
-C:\Users\Artem\eclipse-workspace\library-management\src\main\java\com\example\controller\BookListServlet.java
-C:\Users\Artem\eclipse-workspace\library-management\src\main\java\com\example\service\BookService.java
-C:\Users\Artem\eclipse-workspace\library-management\src\main\java\com\example\config\WebAppInitializer.java
-C:\Users\Artem\eclipse-workspace\library-management\src\main\java\com\example\dao\BookDAO.java
-C:\Users\Artem\eclipse-workspace\library-management\src\main\java\com\example\config\WebConfig.java
-C:\Users\Artem\eclipse-workspace\library-management\src\main\java\com\example\model\Book.java
+/home/artem/java/spring-core/library/spring-crud/src/main/java/com/example/service/BookService.java
+/home/artem/java/spring-core/library/spring-crud/src/main/java/com/example/config/AppConfig.java
+/home/artem/java/spring-core/library/spring-crud/src/main/java/com/example/dao/BookDAO.java
+/home/artem/java/spring-core/library/spring-crud/src/main/java/com/example/model/Book.java
+/home/artem/java/spring-core/library/spring-crud/src/main/java/com/example/config/WebConfig.java
+/home/artem/java/spring-core/library/spring-crud/src/main/java/com/example/config/WebAppInitializer.java
+/home/artem/java/spring-core/library/spring-crud/src/main/java/com/example/controller/BookListServlet.java
