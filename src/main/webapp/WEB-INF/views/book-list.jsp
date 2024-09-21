@@ -40,8 +40,6 @@
             <input type="text" id="author" name="author" required />
             <label for="publishedYear">Published Year:</label>
             <input type="number" id="publishedYear" name="publishedYear" required />
-            <label for="isbn">ISBN:</label>
-            <input type="text" id="isbn" name="isbn" required />
             <button type="submit">Add Book</button>
         </form>
     </div>
@@ -54,7 +52,6 @@
                 <th>Title</th>
                 <th>Author</th>
                 <th>Published Year</th>
-                <th>ISBN</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -69,7 +66,6 @@
                 <td><%= book.getTitle() %></td>
                 <td><%= book.getAuthor() %></td>
                 <td><%= book.getPublishedYear() %></td>
-                <td><%= book.getIsbn() %></td>
                 <td>
                     <!-- Ссылка для удаления книги -->
                     <a href="deleteBook?id=<%= book.getId() %>">Delete</a>

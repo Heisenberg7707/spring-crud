@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  library:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: library-app
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    environment:
+      - SPRING_DATASOURCE_URL=mysql://db:3306/library
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=heisenberg7709
+    networks:
+      - app-network
+
+  db:
+    image: mysql:8.0
+    container_name: mysql-db
+    environment:
+      MYSQL_ROOT_PASSWORD: heisenberg7709
+      MYSQL_DATABASE: library
+    ports:
+      - "3307:3306"
+    networks:
+      - app-network
+
+
+networks:
+  app-network:
+    driver: bridge
+

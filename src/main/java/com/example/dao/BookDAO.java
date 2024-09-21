@@ -28,10 +28,20 @@ public class BookDAO {
 	        book.setTitle((String) row.get("title"));
 	        book.setAuthor((String) row.get("author"));
 	        book.setPublishedYear((Integer) row.get("published_year"));
-	        book.setIsbn((String) row.get("isbn"));
 	        books.add(book);
 	    }
 	    return books;
+	}
+
+	public void addBook(Book book){
+		String sql = "INSERT INTO books (title, author, published_year) VALUES (?, ?, ?)";
+		jdbcTemplate.update(sql, book.getTitle(), book.getAuthor(), book.getPublishedYear());
+			
+	}
+
+	public void deleteBook(int id){
+		String sql = "DELETE FROM books WHERE id = ?";
+		jdbcTemplate.update(sql, id);
 	}
 
 }
